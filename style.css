@@ -131,4 +131,20 @@ input[type="number"]::-webkit-outer-spin-button {
 .tip-person {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.bold {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+.light {
+  color: hsl(185, 41%, 84%);
+  font-size: 12px;
+}
+.bold-amount {
+  font-size: 34px;
+  margin-top: 15px;
+  font-weight: 700;
+  color: hsl(172, 67%, 45%);
 }
