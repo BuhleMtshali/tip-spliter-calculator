@@ -6,7 +6,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 50px auto;
   font-family: "Space Mono", monospace;
   background-color: var(--bg-color);
 }
@@ -19,13 +19,17 @@ body {
   width: 500px;
   border-radius: 8px;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .left-container {
   width: 50%;
 }
-
+input {
+  border: none;
+  background-color: #f1f9fb;
+  padding: 8px;
+}
 label {
   display: block;
 }
@@ -39,6 +43,18 @@ label {
   font-size: 24px;
   border-radius: 5px;
 }
+
+#total-people-input {
+  background-image: url(img/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 14px;
+  text-align: right;
+  width: 100%;
+  font-size: 24px;
+  border-radius: 5px;
+}
+
 ::placeholder {
   text-align: right;
   color: var(--input-bg);
@@ -46,15 +62,38 @@ label {
 }
 .buttons-container {
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+button {
+  background-color: var(--dark-cyan);
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+}
+.buttons-container button,
+.buttons-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+.buttons-container::placeholder {
+  font-size: 12px;
 }
 p {
   color: hsl(186, 14%, 43%);
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 12px;
+  font-size: 14px;
 }
 label {
   font-size: 18px;
   color: hsl(186, 14%, 43%);
   font-weight: 700;
+}
+*:focus {
+  outline: 3px solid hsl(172, 67%, 45%);
 }
