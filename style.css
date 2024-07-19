@@ -5,13 +5,22 @@
   --green-font: hsl(189, 41%, 97%);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .container {
-    flex-direction: row;
+    flex-direction: column;
   }
-  .buttons-container {
-    grid-template-columns: repeat(2, 1fr);
+
+  .left-container,
+  .right-container {
+    flex: 1 1 100%;
+    margin-right: 0;
   }
+}
+
+.left-container,
+.right-container {
+  flex: 1 1 100%;
+  padding: 10px;
 }
 
 body {
@@ -26,7 +35,7 @@ body {
 .container {
   background-color: white;
   margin: 0 auto;
-  width: 600px;
+  max-width: 600px;
   border-radius: 8px;
   padding: 10px;
   margin-top: 20px;
