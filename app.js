@@ -23,8 +23,8 @@ function customTip(event) {
     let tip = billAmount * customInputTip;
     let totalTipBill = billAmount + tip;
     let tipPerPerson = totalTipBill / people;
-    tipPerPersonElement.innerText = tip / people;
-    totalAmountEachElement.innerText = totalTipBill / people;
+    tipPerPersonElement.innerText = "$" + tip / people;
+    totalAmountEachElement.innerText = "$" + totalTipBill / people;
   }
 }
 
@@ -36,8 +36,8 @@ function addFivePercentTip() {
   let tip = billAmount * 0.05;
   let totalTipBill = billAmount + tip;
   let tipPerPerson = totalTipBill / people;
-  tipPerPersonElement.innerText = tip / people;
-  totalAmountEachElement.innerText = totalTipBill / people;
+  tipPerPersonElement.innerText = "$" + tip / people;
+  totalAmountEachElement.innerText = "$" + totalTipBill / people;
 }
 
 //second function 10%
@@ -48,8 +48,8 @@ function addTenPercentTip() {
   let tip = billAmount * 0.1;
   let totalTipBill = billAmount + tip;
   let tipPerPerson = totalTipBill / people;
-  tipPerPersonElement.innerText = tip / people;
-  totalAmountEachElement.innerText = totalTipBill / people;
+  tipPerPersonElement.innerText = "$" + tip / people;
+  totalAmountEachElement.innerText = "$" + totalTipBill / people;
 }
 
 //third function 15%
@@ -60,8 +60,8 @@ function addFiftenPercentTip() {
   let tip = billAmount * 0.15;
   let totalTipBill = billAmount + tip;
   let tipPerPerson = totalTipBill / people;
-  tipPerPersonElement.innerText = tip / people;
-  totalAmountEachElement.innerText = totalTipBill / people;
+  tipPerPersonElement.innerText = "$" + tip / people;
+  totalAmountEachElement.innerText = "$" + totalTipBill / people;
 }
 
 //fourth function 25%
@@ -72,8 +72,8 @@ function addtwentyFive() {
   let tip = billAmount * 0.25;
   let totalTipBill = billAmount + tip;
   let tipPerPerson = totalTipBill / people;
-  tipPerPersonElement.innerText = tip / people;
-  totalAmountEachElement.innerText = totalTipBill / people;
+  tipPerPersonElement.innerText = "$" + tip / people;
+  totalAmountEachElement.innerText = "$" + totalTipBill / people;
 }
 
 //fift function 50%
@@ -84,8 +84,8 @@ function addFiftyPercent() {
   let tip = billAmount * 0.5;
   let totalTipBill = billAmount + tip;
   let tipPerPerson = totalTipBill / people;
-  tipPerPersonElement.innerText = tip / people;
-  totalAmountEachElement.innerText = totalTipBill / people;
+  tipPerPersonElement.innerText = "$" + tip / people;
+  totalAmountEachElement.innerText = "$" + totalTipBill / people;
 }
 
 //reset function
