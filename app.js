@@ -6,6 +6,7 @@ let fivePercentButton = document.getElementById("five-percent");
 let tenPercentButton = document.getElementById("ten-percent");
 let fiftenPercentButton = document.getElementById("fiften-percent");
 let twentyFivePercentButton = document.getElementById("twenty-five");
+let fiftyPercentButton = document.getElementById("fifty-percent");
 let customAmountElement = document.getElementById("custom-input");
 let resetButton = document.getElementById("reset");
 // definitions
@@ -28,6 +29,42 @@ function addTenPercentTip() {
   let billAmount = parseFloat(billElement.value);
   let people = parseFloat(totalPeopleElement.value);
   let tip = billAmount * 0.1;
+  let totalTipBill = billAmount + tip;
+  let tipPerPerson = totalTipBill / people;
+  tipPerPersonElement.innerText = tip / people;
+  totalAmountEachElement.innerText = totalTipBill / people;
+}
+
+//third function 15%
+fiftenPercentButton.addEventListener("click", addFiftenPercentTip);
+function addFiftenPercentTip() {
+  let billAmount = parseFloat(billElement.value);
+  let people = parseFloat(totalPeopleElement.value);
+  let tip = billAmount * 0.15;
+  let totalTipBill = billAmount + tip;
+  let tipPerPerson = totalTipBill / people;
+  tipPerPersonElement.innerText = tip / people;
+  totalAmountEachElement.innerText = totalTipBill / people;
+}
+
+//fourth function 25%
+twentyFivePercentButton.addEventListener("click", addtwentyFive);
+function addtwentyFive() {
+  let billAmount = parseFloat(billElement.value);
+  let people = parseFloat(totalPeopleElement.value);
+  let tip = billAmount * 0.25;
+  let totalTipBill = billAmount + tip;
+  let tipPerPerson = totalTipBill / people;
+  tipPerPersonElement.innerText = tip / people;
+  totalAmountEachElement.innerText = totalTipBill / people;
+}
+
+//fift function 50%
+fiftyPercentButton.addEventListener("click", addFiftyPercent);
+function addFiftyPercent() {
+  let billAmount = parseFloat(billElement.value);
+  let people = parseFloat(totalPeopleElement.value);
+  let tip = billAmount * 0.5;
   let totalTipBill = billAmount + tip;
   let tipPerPerson = totalTipBill / people;
   tipPerPersonElement.innerText = tip / people;
