@@ -19,6 +19,7 @@ body {
   width: 500px;
   border-radius: 8px;
   padding: 10px;
+  margin-top: 50px;
 }
 
 .left-container {
@@ -32,10 +33,28 @@ label {
   background-image: url(img/icon-dollar.svg);
   background-repeat: no-repeat;
   background-position: left center;
+  background-size: 14px;
   text-align: right;
+  width: 100%;
+  font-size: 24px;
+  border-radius: 5px;
 }
 ::placeholder {
   text-align: right;
   color: var(--input-bg);
   font-weight: bold;
+}
+.buttons-container {
+  width: 100%;
+}
+p {
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+label {
+  font-size: 18px;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
 }
