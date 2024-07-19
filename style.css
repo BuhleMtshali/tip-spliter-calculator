@@ -5,10 +5,20 @@
   --green-font: hsl(189, 41%, 97%);
 }
 
+@media (max-width: 400px) {
+  .container {
+    flex-direction: row;
+  }
+  .buttons-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 body {
   margin: 50px auto;
   font-family: "Space Mono", monospace;
   background-color: var(--bg-color);
+  user-select: none;
 }
 .logo {
   text-align: center;
