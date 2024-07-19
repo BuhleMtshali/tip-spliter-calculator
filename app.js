@@ -11,6 +11,23 @@ let customAmountElement = document.getElementById("custom-input");
 let resetButton = document.getElementById("reset");
 // definitions
 
+//inputfunction
+
+customAmountElement.addEventListener("keypress", customTip);
+function customTip(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    let billAmount = parseFloat(billElement.value);
+    let people = parseFloat(totalPeopleElement.value);
+    let customInputTip = parseFloat(customAmountElement.value / 100);
+    let tip = billAmount * customInputTip;
+    let totalTipBill = billAmount + tip;
+    let tipPerPerson = totalTipBill / people;
+    tipPerPersonElement.innerText = tip / people;
+    totalAmountEachElement.innerText = totalTipBill / people;
+  }
+}
+
 //first function 5%
 fivePercentButton.addEventListener("click", addFivePercentTip);
 function addFivePercentTip() {
@@ -78,4 +95,5 @@ function resetAll() {
   totalPeopleElement.value = "";
   tipPerPersonElement.textContent = "$0.00";
   totalAmountEachElement.textContent = "$0.00";
+  customAmountElement.value = "Other";
 }
