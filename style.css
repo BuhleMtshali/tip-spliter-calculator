@@ -6,8 +6,11 @@
 }
 
 @media (max-width: 768px) {
-  */ .container {
+  .container {
     flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .left-container,
