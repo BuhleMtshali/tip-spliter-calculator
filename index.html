@@ -27,17 +27,32 @@
         <input type="number" id="bill-amount" placeholder="0" required />
         <p class="tip-text">Select Tip %</p>
         <div class="buttons-container">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
+          <button id="five-percent">5%</button>
+          <button id="ten-percent">10%</button>
+          <button id="fiften-percent">15%</button>
+          <button id="twenty-five">25%</button>
+          <button id="fifty-percent">50%</button>
           <input type="number" id="custom-input" placeholder="Other" />
         </div>
         <p>Number of People</p>
         <input type="number" id="total-people-input" placeholder="0" />
       </div>
-      <div class="right-container"></div>
+      <div class="right-container">
+        <div class="tip-person">
+          <p class="bold">
+            Tip Amount<br />
+            <span class="light">/ person</span>
+          </p>
+          <p class="bold-amount">$0.00</p>
+        </div>
+        <div class="tip-person">
+          <p class="bold">
+            Total<br />
+            <span class="light">/ person</span>
+          </p>
+          <p class="bold-amount">$0.00</p>
+        </div>
+      </div>
       <!-- end of container div -->
     </div>
   </body>
