@@ -7,5 +7,34 @@
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Space Mono", monospace;
+  background-color: var(--bg-color);
+}
+.logo {
+  text-align: center;
+}
+.container {
+  background-color: white;
+  margin: 0 auto;
+  width: 600px;
+  border-radius: 8px;
+  padding: 10px;
+}
+label {
+  display: block;
+}
+#bill-amount {
+  background-image: url(img/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+::placeholder {
+  text-align: right;
+  color: var(--input-bg);
+  font-weight: bold;
+  font-size: 16px;
 }

@@ -8,9 +8,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/47ef0eeb2e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="logo">
+      <img src="img/logo.svg" alt="logo-image" />
+    </div>
+    <!-- container div below -->
+    <div class="container">
+      <div class="left-container">
+        <label for="bill-amount">Bill</label>
+        <input type="number" id="bill-amount" placeholder="0" required />
+        <p>Select Tip %</p>
+        <div class="buttons-container">
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="number" id="custom-input" placeholder="Custom" />
+        </div>
+        <p>Number of people</p>
+      </div>
+      <div class="right-container"></div>
+      <!-- end of container div -->
+    </div>
+  </body>
 </html>
